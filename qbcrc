@@ -1,0 +1,7 @@
+case "$QBurlshort" in
+    local)
+     QBurl='http://127.0.0.1:8080'
+     [ -z "$QBpassword" ] &&
+        QBpassword='adminadmin'
+     ;;
+esac
