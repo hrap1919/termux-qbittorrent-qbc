@@ -1,7 +1,14 @@
 case "$QBurlshort" in
     local)
-     QBurl='http://127.0.0.1:8080'
-     [ -z "$QBpassword" ] &&
+     /data/data/com.termux/files/opt/bin/qbittorrent-439 -d
+     sleep 1
+     function exit ()
+     {
+      killall qbittorrent-439
+      builtin exit "$?"
+     }
+     QBurl='http://localhost:8080'
+     [ -z " QBpassword" ] &&
         QBpassword='adminadmin'
-     ;;
+    ;;
 esac
