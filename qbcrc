@@ -8,7 +8,6 @@ case "$QBurlshort" in
       builtin exit "$?"
      }
      QBurl='http://localhost:8080'
-     [ -z "$QBpassword" ] &&
-        QBpassword='adminadmin'
+     QBpassword='adminadmin'
     ;;
 esac
